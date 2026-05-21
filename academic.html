@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Academics | Sunshine Mission School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .hero-overlay {
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.88),
+          rgba(0, 0, 0, 0.45)
+        );
+      }
+
+      .card-hover {
+        transition: 0.4s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+      }
+
+      .program-card {
+        transition: 0.4s;
+      }
+
+      .program-card:hover {
+        background: #2563eb;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div id="header"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center">
+      <!-- Background -->
+      <img
+        src="images/classroom.jpeg"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <p class="uppercase tracking-[4px] text-blue-400 font-semibold mb-4">
+          Academics
+        </p>
+
+        <h1
+          class="text-5xl md:text-7xl font-black text-white leading-tight mb-6"
+        >
+          Inspiring
+          <span class="text-blue-500"> Academic Excellence </span>
+        </h1>
+
+        <p class="text-gray-300 text-lg leading-8 max-w-2xl mb-8">
+          Our academic system combines innovation, discipline, and practical
+          learning to prepare students for a successful future.
+        </p>
+
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition"
+        >
+          Explore Programs
+        </a>
+      </div>
+    </section>
+
+    <!-- ACADEMIC LEVELS -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-4">
+            Academic Levels
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black">Learning Stages</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Card -->
+          <div
+            class="program-card border border-gray-200 p-8 rounded-3xl text-center shadow-sm"
+          >
+            <i class="fa-solid fa-child text-4xl mb-6 text-blue-600"></i>
+
+            <h3 class="text-2xl font-bold mb-3">Pre-Primary</h3>
+
+            <p class="text-sm leading-7">
+              Interactive and playful learning for young minds.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="program-card border border-gray-200 p-8 rounded-3xl text-center shadow-sm"
+          >
+            <i class="fa-solid fa-book-open text-4xl mb-6 text-blue-600"></i>
+
+            <h3 class="text-2xl font-bold mb-3">Primary</h3>
+
+            <p class="text-sm leading-7">
+              Building a strong academic foundation for students.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="program-card border border-gray-200 p-8 rounded-3xl text-center shadow-sm"
+          >
+            <i class="fa-solid fa-flask text-4xl mb-6 text-blue-600"></i>
+
+            <h3 class="text-2xl font-bold mb-3">Middle</h3>
+
+            <p class="text-sm leading-7">
+              Enhancing creativity and concept-based learning.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="program-card border border-gray-200 p-8 rounded-3xl text-center shadow-sm"
+          >
+            <i
+              class="fa-solid fa-user-graduate text-4xl mb-6 text-blue-600"
+            ></i>
+
+            <h3 class="text-2xl font-bold mb-3">Senior</h3>
+
+            <p class="text-sm leading-7">
+              Career-focused education with advanced academic guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section class="bg-black text-white py-24">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-[3px] text-blue-400 font-semibold mb-4">
+          Curriculum
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-black mb-16">
+          Curriculum Highlights
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i class="fa-solid fa-book text-4xl text-blue-500 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Core Subjects</h3>
+
+            <p class="text-gray-400 leading-7">
+              Mathematics, Science, Languages, and Social Studies.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i class="fa-solid fa-laptop-code text-4xl text-blue-500 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Digital Learning</h3>
+
+            <p class="text-gray-400 leading-7">
+              Computer education and modern technology integration.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i class="fa-solid fa-palette text-4xl text-blue-500 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Creative Arts</h3>
+
+            <p class="text-gray-400 leading-7">
+              Music, dance, drawing, and cultural development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING PROCESS -->
+    <section class="py-24 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-4">
+            Learning Process
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black">Our Approach</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Item -->
+          <div class="bg-white p-8 rounded-3xl shadow-lg flex gap-6">
+            <div
+              class="min-w-[60px] h-[60px] rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold"
+            >
+              1
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-3">Concept Building</h3>
+
+              <p class="text-gray-600 leading-7">
+                Strengthening fundamentals through interactive classroom
+                teaching.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-8 rounded-3xl shadow-lg flex gap-6">
+            <div
+              class="min-w-[60px] h-[60px] rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold"
+            >
+              2
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-3">Practical Learning</h3>
+
+              <p class="text-gray-600 leading-7">
+                Hands-on projects and activities for better understanding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-8 rounded-3xl shadow-lg flex gap-6">
+            <div
+              class="min-w-[60px] h-[60px] rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold"
+            >
+              3
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-3">Assessments</h3>
+
+              <p class="text-gray-600 leading-7">
+                Continuous evaluations and personalized student feedback.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="bg-white p-8 rounded-3xl shadow-lg flex gap-6">
+            <div
+              class="min-w-[60px] h-[60px] rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold"
+            >
+              4
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-3">Student Excellence</h3>
+
+              <p class="text-gray-600 leading-7">
+                Encouraging confidence, leadership, and success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-20 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+      >
+        <div>
+          <i class="fa-solid fa-tv text-4xl text-blue-600 mb-4"></i>
+
+          <h3 class="font-bold text-lg">Smart Classes</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-lightbulb text-4xl text-blue-600 mb-4"></i>
+
+          <h3 class="font-bold text-lg">Innovation</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-chart-line text-4xl text-blue-600 mb-4"></i>
+
+          <h3 class="font-bold text-lg">Performance</h3>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-users text-4xl text-blue-600 mb-4"></i>
+
+          <h3 class="font-bold text-lg">Expert Faculty</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="bg-blue-600 text-white py-24">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-5xl md:text-6xl font-black mb-6">100% Results</h2>
+
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto leading-8">
+          Our students consistently achieve academic excellence and outstanding
+          board examination performance.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-black text-white py-24">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Admissions Open For 2026-27
+        </h2>
+
+        <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          Join a learning environment that inspires innovation, discipline, and
+          academic success.
+        </p>
+
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl text-lg font-semibold transition"
+        >
+          Apply Now
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

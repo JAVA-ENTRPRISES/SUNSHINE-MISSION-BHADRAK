@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Admissions | Sunshine Mission School</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+  .hero-overlay{
+    background: linear-gradient(
+      to right,
+      rgba(0,0,0,0.9),
+      rgba(0,0,0,0.45)
+    );
+  }
+
+  .card-hover{
+    transition: 0.4s;
+  }
+
+  .card-hover:hover{
+    transform: translateY(-10px);
+  }
+
+  .step-card{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .step-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #2563eb;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .step-card:hover::before{
+    left: 0;
+  }
+
+  .step-card *{
+    position: relative;
+    z-index: 2;
+  }
+
+  .step-card:hover{
+    color: white;
+  }
+
+</style>
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative h-[90vh] flex items-center">
+
+  <!-- Background -->
+  <img
+    src="images/school.jpg"
+    class="absolute inset-0 w-full h-full object-cover"/>
+
+  <!-- Overlay -->
+  <div class="hero-overlay absolute inset-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <p
+      class="uppercase tracking-[4px]
+      text-blue-400 font-semibold mb-4">
+
+      Admissions Open 2026-27
+
+    </p>
+
+    <h1
+      class="text-5xl md:text-7xl
+      font-black text-white
+      leading-tight mb-6">
+
+      Begin Your
+      <span class="text-blue-500">
+        Learning Journey
+      </span>
+
+    </h1>
+
+    <p
+      class="text-gray-300 text-lg
+      leading-8 max-w-2xl mb-10">
+
+      Join Sunshine Mission School
+      and provide your child with
+      quality education, innovation,
+      discipline, and a bright future.
+
+    </p>
+
+    <div class="flex flex-wrap gap-5">
+
+      <a href="#"
+      class="bg-blue-600 hover:bg-blue-700
+      text-white px-8 py-4 rounded-xl
+      font-semibold transition">
+
+        Apply Admission
+
+      </a>
+
+      <a href="#"
+      class="border border-white
+      text-white px-8 py-4 rounded-xl
+      hover:bg-white hover:text-black transition">
+
+        Download Prospectus
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- QUICK INFO -->
+<section class="py-16 bg-black text-white">
+
+  <div
+    class="max-w-7xl mx-auto px-6
+    grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+    <div>
+
+      <i
+        class="fa-solid fa-calendar-days
+        text-4xl text-blue-500 mb-4"></i>
+
+      <h3 class="text-xl font-bold">
+        Session
+      </h3>
+
+      <p class="text-gray-400 mt-2">
+        2026 - 2027
+      </p>
+
+    </div>
+
+    <div>
+
+      <i
+        class="fa-solid fa-school
+        text-4xl text-blue-500 mb-4"></i>
+
+      <h3 class="text-xl font-bold">
+        Classes
+      </h3>
+
+      <p class="text-gray-400 mt-2">
+        Nursery to X
+      </p>
+
+    </div>
+
+    <div>
+
+      <i
+        class="fa-solid fa-users
+        text-4xl text-blue-500 mb-4"></i>
+
+      <h3 class="text-xl font-bold">
+        Limited Seats
+      </h3>
+
+      <p class="text-gray-400 mt-2">
+        Hurry Up
+      </p>
+
+    </div>
+
+    <div>
+
+      <i
+        class="fa-solid fa-phone-volume
+        text-4xl text-blue-500 mb-4"></i>
+
+      <h3 class="text-xl font-bold">
+        Support
+      </h3>
+
+      <p class="text-gray-400 mt-2">
+        24/7 Assistance
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ADMISSION PROCESS -->
+<section class="py-24 bg-gray-100">
+
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <p
+      class="uppercase tracking-[3px]
+      text-blue-600 font-semibold mb-4">
+
+      Admission Process
+
+    </p>
+
+    <h2
+      class="text-4xl md:text-5xl
+      font-black mb-16">
+
+      Easy Steps To Apply
+
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+
+      <!-- Step -->
+      <div
+        class="step-card bg-white
+        p-8 rounded-3xl shadow-lg">
+
+        <div
+          class="w-16 h-16 rounded-full
+          bg-blue-600 text-white
+          flex items-center justify-center
+          text-2xl font-bold mx-auto mb-6">
+
+          1
+
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Apply
+        </h3>
+
+        <p class="leading-7">
+          Fill the admission enquiry
+          or application form.
+        </p>
+
+      </div>
+
+      <!-- Step -->
+      <div
+        class="step-card bg-white
+        p-8 rounded-3xl shadow-lg">
+
+        <div
+          class="w-16 h-16 rounded-full
+          bg-blue-600 text-white
+          flex items-center justify-center
+          text-2xl font-bold mx-auto mb-6">
+
+          2
+
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Campus Visit
+        </h3>
+
+        <p class="leading-7">
+          Visit our campus and interact
+          with our academic team.
+        </p>
+
+      </div>
+
+      <!-- Step -->
+      <div
+        class="step-card bg-white
+        p-8 rounded-3xl shadow-lg">
+
+        <div
+          class="w-16 h-16 rounded-full
+          bg-blue-600 text-white
+          flex items-center justify-center
+          text-2xl font-bold mx-auto mb-6">
+
+          3
+
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Assessment
+        </h3>
+
+        <p class="leading-7">
+          Basic interaction and evaluation
+          process for students.
+        </p>
+
+      </div>
+
+      <!-- Step -->
+      <div
+        class="step-card bg-white
+        p-8 rounded-3xl shadow-lg">
+
+        <div
+          class="w-16 h-16 rounded-full
+          bg-blue-600 text-white
+          flex items-center justify-center
+          text-2xl font-bold mx-auto mb-6">
+
+          4
+
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Confirm
+        </h3>
+
+        <p class="leading-7">
+          Submit documents and confirm
+          your admission.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FORM SECTION -->
+<section class="py-24 bg-white">
+
+  <div
+    class="max-w-7xl mx-auto px-6
+    grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- LEFT -->
+    <div>
+
+      <p
+        class="uppercase tracking-[3px]
+        text-blue-600 font-semibold mb-4">
+
+        Admission Enquiry
+
+      </p>
+
+      <h2
+        class="text-4xl md:text-5xl
+        font-black mb-8">
+
+        Request Information
+
+      </h2>
+
+      <p
+        class="text-gray-600 leading-8 mb-8">
+
+        Fill out the enquiry form and our
+        admission team will contact you
+        with complete details regarding
+        admission and curriculum.
+
+      </p>
+
+      <img
+        src="images/classroom.jpeg"
+        class="rounded-3xl shadow-2xl"/>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div
+      class="bg-gray-100 p-10
+      rounded-3xl shadow-xl">
+
+      <form class="space-y-5">
+
+        <input
+          type="text"
+          placeholder="Parent Name"
+          class="w-full p-4 rounded-xl
+          border border-gray-300
+          outline-none focus:border-blue-600"/>
+
+        <input
+          type="text"
+          placeholder="Student Name"
+          class="w-full p-4 rounded-xl
+          border border-gray-300
+          outline-none focus:border-blue-600"/>
+
+        <div class="grid md:grid-cols-2 gap-5">
+
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="p-4 rounded-xl
+            border border-gray-300
+            outline-none focus:border-blue-600"/>
+
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="p-4 rounded-xl
+            border border-gray-300
+            outline-none focus:border-blue-600"/>
+
+        </div>
+
+        <select
+          class="w-full p-4 rounded-xl
+          border border-gray-300
+          outline-none focus:border-blue-600">
+
+          <option>Select Class</option>
+          <option>Nursery</option>
+          <option>KG</option>
+          <option>Class I</option>
+          <option>Class II</option>
+
+        </select>
+
+        <textarea
+          rows="5"
+          placeholder="Your Message"
+          class="w-full p-4 rounded-xl
+          border border-gray-300
+          outline-none focus:border-blue-600"></textarea>
+
+        <button
+          class="w-full bg-blue-600
+          hover:bg-blue-700 text-white
+          py-4 rounded-xl font-semibold transition">
+
+          Submit Enquiry
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DOCUMENTS -->
+<section class="bg-black text-white py-24">
+
+  <div
+    class="max-w-7xl mx-auto px-6
+    grid md:grid-cols-2 gap-10">
+
+    <!-- Documents -->
+    <div
+      class="bg-white/5 border
+      border-white/10 p-10
+      rounded-3xl">
+
+      <h2
+        class="text-3xl font-black
+        mb-8">
+
+        Required Documents
+
+      </h2>
+
+      <ul class="space-y-5 text-gray-300">
+
+        <li>✔ Birth Certificate</li>
+        <li>✔ Aadhaar Card Copy</li>
+        <li>✔ Transfer Certificate</li>
+        <li>✔ Previous Report Card</li>
+        <li>✔ Passport Size Photos</li>
+
+      </ul>
+
+    </div>
+
+    <!-- Classes -->
+    <div
+      class="bg-white/5 border
+      border-white/10 p-10
+      rounded-3xl">
+
+      <h2
+        class="text-3xl font-black
+        mb-8">
+
+        Classes Offered
+
+      </h2>
+
+      <ul class="space-y-5 text-gray-300">
+
+        <li>Pre Primary (Nursery - KG)</li>
+        <li>Primary (Class I - V)</li>
+        <li>Middle School (VI - VIII)</li>
+        <li>Secondary (IX - X)</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="bg-blue-600 text-white py-24">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h2
+      class="text-4xl md:text-5xl
+      font-black mb-6">
+
+      Secure Your Child’s Future Today
+
+    </h2>
+
+    <p
+      class="text-blue-100 text-lg
+      mb-10 max-w-2xl mx-auto">
+
+      Admissions are now open.
+      Limited seats available for
+      the academic session 2026-27.
+
+    </p>
+
+    <a href="#"
+    class="bg-white text-blue-600
+    hover:bg-gray-100 px-10 py-4
+    rounded-xl text-lg font-semibold transition">
+
+      Apply Now
+
+    </a>
+
+  </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

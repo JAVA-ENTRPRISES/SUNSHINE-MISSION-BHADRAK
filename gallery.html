@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | Sunshine Mission School</title>
+
+    <link rel="icon" type="image/png" href="images/log.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .gallery-card {
+        transition: 0.5s;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .gallery-card img {
+        transition: 0.6s;
+      }
+
+      .gallery-card:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div id="header"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[75vh] flex items-center justify-center">
+      <!-- Background -->
+      <img
+        src="images/school.jpg"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center px-6">
+        <p class="uppercase tracking-[5px] text-blue-400 font-semibold mb-4">
+          School Gallery
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-black text-white mb-6">
+          Capturing Beautiful Moments
+        </h1>
+
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-8">
+          Explore memories of academic activities, celebrations, achievements,
+          sports, and campus life.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY INTRO -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-[4px] text-blue-600 font-semibold mb-4">
+          Campus Memories
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Explore Our Gallery
+        </h2>
+
+        <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-8">
+          A glimpse into the vibrant atmosphere of our school through events,
+          activities, achievements, and student life.
+        </p>
+      </div>
+    </section>
+
+    <!-- MASONRY STYLE GALLERY -->
+    <section class="pb-24">
+      <div
+        class="max-w-7xl mx-auto px-6 columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6"
+      >
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/annual.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">School Event</p>
+
+              <h3 class="text-white text-2xl font-bold">Annual Day</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/sport.webp" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Sports</p>
+
+              <h3 class="text-white text-2xl font-bold">Sports Day</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/science.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Innovation</p>
+
+              <h3 class="text-white text-2xl font-bold">Science Exhibition</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/act.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Learning</p>
+
+              <h3 class="text-white text-2xl font-bold">
+                Classroom Activities
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/cul.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Celebration</p>
+
+              <h3 class="text-white text-2xl font-bold">Cultural Program</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/assembly.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Discipline</p>
+
+              <h3 class="text-white text-2xl font-bold">Morning Assembly</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/teacher.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Celebration</p>
+
+              <h3 class="text-white text-2xl font-bold">Teacher's Day</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="gallery-card relative overflow-hidden rounded-3xl shadow-2xl break-inside-avoid"
+        >
+          <img src="images/tree.jpg" class="w-full h-full object-cover" />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 hover:opacity-100 transition duration-500"
+          >
+            <div class="absolute bottom-6 left-6">
+              <p class="text-blue-400 text-sm mb-2">Environment</p>
+
+              <h3 class="text-white text-2xl font-bold">Plantation Drive</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="bg-black text-white py-24">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center"
+      >
+        <div>
+          <h2 class="text-5xl font-black text-blue-500 mb-3">500+</h2>
+
+          <p class="text-gray-400">Photos</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black text-blue-500 mb-3">50+</h2>
+
+          <p class="text-gray-400">Events</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black text-blue-500 mb-3">100+</h2>
+
+          <p class="text-gray-400">Activities</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black text-blue-500 mb-3">15+</h2>
+
+          <p class="text-gray-400">Years Journey</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-600 text-white py-24 text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Creating Memories Every Day
+        </h2>
+
+        <p class="text-blue-100 text-lg leading-8 mb-10">
+          Our school celebrates learning, creativity, achievements, and joyful
+          experiences together.
+        </p>
+
+        <a
+          href="#"
+          class="bg-white text-blue-600 hover:bg-gray-100 px-10 py-4 rounded-xl font-semibold text-lg transition"
+        >
+          Explore More
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

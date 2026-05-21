@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sunshine Mission School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .hero-overlay {
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.85),
+          rgba(0, 0, 0, 0.45)
+        );
+      }
+
+      .card-hover {
+        transition: 0.4s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+      }
+
+      .gallery-img {
+        transition: 0.4s;
+      }
+
+      .gallery-img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div id="header"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center">
+      <!-- Background Image -->
+      <img
+        src="images/school.jpg"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Left -->
+        <div>
+          <p class="uppercase tracking-[4px] text-blue-400 font-semibold mb-4">
+            Welcome To Sunshine Mission School
+          </p>
+
+          <h1
+            class="text-5xl md:text-7xl font-black text-white leading-tight mb-6"
+          >
+            Future Begins
+            <span class="text-blue-500"> Here </span>
+          </h1>
+
+          <p class="text-gray-300 text-lg leading-8 mb-8 max-w-xl">
+            Empowering young minds with quality education, leadership skills,
+            discipline, and innovation for a brighter tomorrow.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition"
+            >
+              Apply Admission
+            </a>
+
+            <a
+              href="#"
+              class="border border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-black transition"
+            >
+              Explore Campus
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Stats Box -->
+        <div class="hidden md:flex justify-end">
+          <div
+            class="bg-white/10 backdrop-blur-lg border border-white/20 p-8 rounded-3xl w-80"
+          >
+            <div class="space-y-8">
+              <div>
+                <h2 class="text-4xl font-bold text-blue-400">1500+</h2>
+
+                <p class="text-white mt-2">Active Students</p>
+              </div>
+
+              <div>
+                <h2 class="text-4xl font-bold text-blue-400">50+</h2>
+
+                <p class="text-white mt-2">Expert Teachers</p>
+              </div>
+
+              <div>
+                <h2 class="text-4xl font-bold text-blue-400">100%</h2>
+
+                <p class="text-white mt-2">Student Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-24 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Image -->
+        <div class="relative">
+          <img src="images/classroom.jpeg" class="rounded-3xl shadow-2xl" />
+
+          <div
+            class="absolute -bottom-8 -right-8 bg-blue-600 text-white p-6 rounded-2xl shadow-xl"
+          >
+            <h2 class="text-3xl font-bold">15+</h2>
+
+            <p>Years Experience</p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="text-blue-600 font-semibold uppercase tracking-[3px] mb-3">
+            About Our School
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black leading-tight mb-6">
+            Excellence In
+            <span class="text-blue-600"> Education </span>
+          </h2>
+
+          <p class="text-gray-600 leading-8 mb-8">
+            We focus on academic excellence, character building, innovation, and
+            holistic student development through modern education methods.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="border border-gray-200 p-5 rounded-2xl">
+              <i
+                class="fa-solid fa-laptop-code text-3xl text-blue-600 mb-4"
+              ></i>
+
+              <h3 class="font-bold mb-2">Smart Classes</h3>
+
+              <p class="text-sm text-gray-500">
+                Modern digital learning methods.
+              </p>
+            </div>
+
+            <div class="border border-gray-200 p-5 rounded-2xl">
+              <i
+                class="fa-solid fa-shield-halved text-3xl text-blue-600 mb-4"
+              ></i>
+
+              <h3 class="font-bold mb-2">Safe Campus</h3>
+
+              <p class="text-sm text-gray-500">
+                Secure and disciplined environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-black text-white py-24">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-[3px] text-blue-400 font-semibold mb-4">
+          Why Choose Us
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-black mb-16">
+          Building Bright Futures
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i
+              class="fa-solid fa-book-open-reader text-4xl text-blue-500 mb-6"
+            ></i>
+
+            <h3 class="text-2xl font-bold mb-4">Quality Education</h3>
+
+            <p class="text-gray-400 leading-7">
+              Comprehensive curriculum focused on student success and
+              innovation.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i class="fa-solid fa-futbol text-4xl text-blue-500 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Sports Activities</h3>
+
+            <p class="text-gray-400 leading-7">
+              Encouraging physical growth, teamwork, and leadership skills.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="card-hover bg-white/5 border border-white/10 p-8 rounded-3xl"
+          >
+            <i class="fa-solid fa-user-group text-4xl text-blue-500 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Expert Faculty</h3>
+
+            <p class="text-gray-400 leading-7">
+              Experienced teachers dedicated to student excellence and guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="py-24 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+          <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-3">
+            School Gallery
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black">Campus Life</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="images/school.jpg"
+              class="gallery-img w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="images/classroom.jpeg"
+              class="gallery-img w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="images/campus.jpg"
+              class="gallery-img w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="bg-blue-600 text-white py-24">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <i class="fa-solid fa-quote-left text-5xl mb-8"></i>
+
+        <p class="text-2xl md:text-3xl leading-relaxed font-light">
+          "Sunshine Mission School has transformed our child’s confidence,
+          discipline, and academic performance."
+        </p>
+
+        <div class="mt-10">
+          <h3 class="text-xl font-bold">Parent Feedback</h3>
+
+          <p class="text-blue-100">Proud Parent</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-black text-white py-20">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Admissions Open For 2026-27
+        </h2>
+
+        <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          Enroll your child today and give them the opportunity to learn, grow,
+          and succeed.
+        </p>
+
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition"
+        >
+          Apply Now
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

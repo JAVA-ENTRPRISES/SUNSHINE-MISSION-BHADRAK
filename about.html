@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About | Sunshine Mission School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .hero-overlay {
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.85),
+          rgba(0, 0, 0, 0.45)
+        );
+      }
+
+      .card-hover {
+        transition: 0.4s;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+      }
+
+      .timeline-line::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: #2563eb;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <div id="header"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[80vh] flex items-center">
+      <!-- Background -->
+      <img
+        src="images/campus.jpg"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="hero-overlay absolute inset-0"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <p class="uppercase tracking-[4px] text-blue-400 font-semibold mb-4">
+          About Our School
+        </p>
+
+        <h1
+          class="text-5xl md:text-7xl font-black text-white leading-tight mb-6"
+        >
+          Shaping Future
+          <span class="text-blue-500"> Leaders </span>
+        </h1>
+
+        <p class="text-gray-300 text-lg leading-8 max-w-2xl">
+          Sunshine Mission School is committed to academic excellence,
+          discipline, leadership, and innovation to empower every child for a
+          successful future.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-24 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Left Images -->
+        <div class="relative">
+          <img src="images/classroom.jpeg" class="rounded-3xl shadow-2xl" />
+
+          <img
+            src="images/school.jpg"
+            class="absolute -bottom-10 -right-10 w-64 rounded-3xl border-8 border-white shadow-2xl hidden md:block"
+          />
+        </div>
+
+        <!-- Right Content -->
+        <div>
+          <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-4">
+            Who We Are
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black leading-tight mb-8">
+            Excellence In Education Since 2008
+          </h2>
+
+          <p class="text-gray-600 leading-8 mb-6">
+            Established with a vision to provide quality education, Pillar
+            International School focuses on intellectual growth, discipline,
+            creativity, and moral values.
+          </p>
+
+          <p class="text-gray-600 leading-8 mb-8">
+            Our modern teaching approach, experienced faculty, and
+            student-centered environment help every child grow confidently in
+            academics and life.
+          </p>
+
+          <!-- Features -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="border border-gray-200 p-5 rounded-2xl">
+              <i
+                class="fa-solid fa-laptop-code text-3xl text-blue-600 mb-4"
+              ></i>
+
+              <h3 class="font-bold mb-2">Smart Classes</h3>
+
+              <p class="text-sm text-gray-500">
+                Modern digital learning environment.
+              </p>
+            </div>
+
+            <div class="border border-gray-200 p-5 rounded-2xl">
+              <i
+                class="fa-solid fa-user-graduate text-3xl text-blue-600 mb-4"
+              ></i>
+
+              <h3 class="font-bold mb-2">Student Success</h3>
+
+              <p class="text-sm text-gray-500">
+                Focused on overall development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPAL MESSAGE -->
+    <section class="bg-black text-white py-24">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Image -->
+        <div>
+          <img src="images/principal.jpg" class="rounded-3xl shadow-2xl" />
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="uppercase tracking-[3px] text-blue-400 font-semibold mb-4">
+            Principal's Message
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black mb-8">
+            Inspiring Young Minds
+          </h2>
+
+          <p class="text-gray-300 leading-8 mb-6">
+            Our mission is to create confident, responsible, and innovative
+            learners who can contribute positively to society.
+          </p>
+
+          <p class="text-gray-300 leading-8 mb-8">
+            We believe education is not only about academics but also about
+            building character, discipline, leadership, and compassion.
+          </p>
+
+          <div class="border-l-4 border-blue-500 pl-6 italic text-gray-400">
+            "Education is the foundation of a successful and meaningful life."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="bg-blue-600 text-white py-20">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center"
+      >
+        <div>
+          <h2 class="text-5xl font-black mb-2">1500+</h2>
+
+          <p class="text-blue-100">Students</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black mb-2">50+</h2>
+
+          <p class="text-blue-100">Teachers</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black mb-2">25+</h2>
+
+          <p class="text-blue-100">Awards</p>
+        </div>
+
+        <div>
+          <h2 class="text-5xl font-black mb-2">15+</h2>
+
+          <p class="text-blue-100">Years Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-24 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-4">
+          Why Choose Us
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-black mb-16">
+          Our Core Strengths
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div class="card-hover bg-white p-8 rounded-3xl shadow-lg">
+            <i
+              class="fa-solid fa-book-open-reader text-4xl text-blue-600 mb-6"
+            ></i>
+
+            <h3 class="text-2xl font-bold mb-4">Quality Education</h3>
+
+            <p class="text-gray-600 leading-7">
+              Innovative teaching methods with academic excellence.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="card-hover bg-white p-8 rounded-3xl shadow-lg">
+            <i class="fa-solid fa-futbol text-4xl text-blue-600 mb-6"></i>
+
+            <h3 class="text-2xl font-bold mb-4">Sports Activities</h3>
+
+            <p class="text-gray-600 leading-7">
+              Encouraging physical fitness, teamwork, and leadership.
+            </p>
+          </div>
+
+          <!-- Card -->
+          <div class="card-hover bg-white p-8 rounded-3xl shadow-lg">
+            <i
+              class="fa-solid fa-shield-halved text-4xl text-blue-600 mb-6"
+            ></i>
+
+            <h3 class="text-2xl font-bold mb-4">Safe Environment</h3>
+
+            <p class="text-gray-600 leading-7">
+              Secure and disciplined campus for every student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <p class="uppercase tracking-[3px] text-blue-600 font-semibold mb-4">
+            Our Journey
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-black">Milestones</h2>
+        </div>
+
+        <div class="relative timeline-line space-y-16">
+          <!-- Item -->
+          <div class="relative grid md:grid-cols-2 gap-10 items-center">
+            <div class="md:text-right">
+              <h3 class="text-3xl font-black text-blue-600 mb-3">2008</h3>
+
+              <p class="text-gray-600">
+                School established with a vision for quality education.
+              </p>
+            </div>
+
+            <div></div>
+          </div>
+
+          <!-- Item -->
+          <div class="relative grid md:grid-cols-2 gap-10 items-center">
+            <div></div>
+
+            <div>
+              <h3 class="text-3xl font-black text-blue-600 mb-3">2015</h3>
+
+              <p class="text-gray-600">
+                Introduced smart classrooms and modern learning systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="relative grid md:grid-cols-2 gap-10 items-center">
+            <div class="md:text-right">
+              <h3 class="text-3xl font-black text-blue-600 mb-3">2025</h3>
+
+              <p class="text-gray-600">
+                Recognized as a leading institution for academic excellence.
+              </p>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-black text-white py-24">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Be Part Of Our Success Story
+        </h2>
+
+        <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          Admissions are now open for 2026-27. Join a school that inspires
+          excellence, leadership, and innovation.
+        </p>
+
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl text-lg font-semibold transition"
+        >
+          Apply Admission
+        </a>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
